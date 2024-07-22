@@ -4,7 +4,7 @@ version = __import__("src").get_version()
 
 setup(
     name="django_asserts",
-    version=version,
+    version="0.9",
     description="Helpers for testing Django using context managers",
     author="Kalinin Mitko",
     author_email="kalinin.mitko@gmail.com",
@@ -20,8 +20,5 @@ setup(
         "Programming Language :: Python :: 2",
         "Programming Language :: Python :: 3",
     ],
-    install_requires=[
-        "lxml",
-        "cssselect",  # split out of lxml.cssselect in v3.0
-    ],
+    install_requires=["beautifulsoup4==4.12.3"],
 )
